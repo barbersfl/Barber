@@ -1,0 +1,78 @@
+package Front;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+
+public class TelaCadastroFuncionario extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					TelaCadastroFuncionario frame = new TelaCadastroFuncionario();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public TelaCadastroFuncionario() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNome = new JLabel("NOME");
+		lblNome.setBounds(26, 45, 46, 14);
+		contentPane.add(lblNome);
+		
+		textField = new JTextField();
+		textField.setBounds(82, 42, 105, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblNewLabel = new JLabel("N\u00DAMERO");
+		lblNewLabel.setBounds(26, 85, 62, 14);
+		contentPane.add(lblNewLabel);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(82, 82, 53, 20);
+		contentPane.add(textField_1);
+		textField_1.setColumns(10);
+		
+		JLabel lblNewLabel_1 = new JLabel("ENDERE\u00C7O");
+		lblNewLabel_1.setBounds(27, 119, 64, 14);
+		contentPane.add(lblNewLabel_1);
+		
+		textField_2 = new JTextField();
+		textField_2.setBounds(82, 116, 105, 20);
+		contentPane.add(textField_2);
+		textField_2.setColumns(10);
+		
+		JButton btnCadastrar = new JButton("Cadastrar");
+		btnCadastrar.setBounds(79, 154, 89, 23);
+		contentPane.add(btnCadastrar);
+	}
+}
