@@ -10,12 +10,13 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import javax.swing.JButton;
+import javax.swing.JPasswordField;
 
 public class TelaLogin extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
-	private JTextField textField_1;
+	private JPasswordField passwordField;
 
 	/**
 	 * Launch the application.
@@ -58,11 +59,6 @@ public class TelaLogin extends JFrame {
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(169, 161, 104, 20);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
-		
 		JButton btnCadastrar = new JButton("CADASTRAR");
 		btnCadastrar.setBounds(155, 192, 118, 23);
 		contentPane.add(btnCadastrar);
@@ -70,5 +66,11 @@ public class TelaLogin extends JFrame {
 		JButton btnEsqueciASenha = new JButton("ESQUECI A SENHA");
 		btnEsqueciASenha.setBounds(151, 227, 155, 23);
 		contentPane.add(btnEsqueciASenha);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(169, 161, 104, 20);
+		contentPane.add(passwordField);
+	
+		
 	}
 }
