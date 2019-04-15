@@ -9,6 +9,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
 
 public class TelaPrincipal extends JFrame {
 
@@ -65,6 +67,11 @@ public class TelaPrincipal extends JFrame {
 		JButton btnCartoFidelidade = new JButton("CART\u00C3O FIDELIDADE");
 		btnCartoFidelidade.setBounds(10, 236, 143, 23);
 		contentPane.add(btnCartoFidelidade);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\paulo\\Desktop\\cases.jpg"));
+		lblNewLabel.setBounds(163, 11, 311, 248);
+		contentPane.add(lblNewLabel);
 	}
 
 }
