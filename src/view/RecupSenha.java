@@ -44,7 +44,7 @@ public class RecupSenha extends JFrame {
 	public RecupSenha() {
 		setTitle("RECUPERAR SENHA");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 305, 390);
+		setBounds(100, 100, 307, 389);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
