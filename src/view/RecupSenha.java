@@ -44,14 +44,14 @@ public class RecupSenha extends JFrame {
 	public RecupSenha() {
 		setTitle("RECUPERAR SENHA");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 292, 399);
+		setBounds(100, 100, 305, 390);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel jlbUsuario = new JLabel("USUARIO :");
-		jlbUsuario.setBounds(42, 35, 73, 14);
+		jlbUsuario.setBounds(36, 46, 73, 14);
 		contentPane.add(jlbUsuario);
 		
 		loginUsuario = new JTextField();
@@ -60,7 +60,7 @@ public class RecupSenha extends JFrame {
 		loginUsuario.setColumns(10);
 		
 		JLabel lblNovaSenha = new JLabel("NOVA SENHA:");
-		lblNovaSenha.setBounds(41, 109, 89, 14);
+		lblNovaSenha.setBounds(36, 119, 89, 14);
 		contentPane.add(lblNovaSenha);
 		
 		novaSenha = new JPasswordField();
@@ -68,11 +68,11 @@ public class RecupSenha extends JFrame {
 		contentPane.add(novaSenha);
 		
 		lblDigiteASenha = new JLabel("DIGITE A SENHA NOVAMENTE :");
-		lblDigiteASenha.setBounds(42, 181, 178, 14);
+		lblDigiteASenha.setBounds(36, 192, 178, 14);
 		contentPane.add(lblDigiteASenha);
 		
 		confirmacaoSenha = new JTextField();
-		confirmacaoSenha.setBounds(42, 206, 178, 20);
+		confirmacaoSenha.setBounds(36, 209, 184, 20);
 		contentPane.add(confirmacaoSenha);
 		confirmacaoSenha.setColumns(10);
 		
@@ -81,7 +81,7 @@ public class RecupSenha extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnTrocarSenha.setBounds(10, 272, 119, 23);
+		btnTrocarSenha.setBounds(10, 272, 134, 23);
 		contentPane.add(btnTrocarSenha);
 		
 		btnCancelar = new JButton("CANCELAR");
@@ -89,7 +89,7 @@ public class RecupSenha extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnCancelar.setBounds(154, 272, 89, 23);
+		btnCancelar.setBounds(175, 272, 104, 23);
 		contentPane.add(btnCancelar);
 		
 
