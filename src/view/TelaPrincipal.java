@@ -12,6 +12,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Toolkit;
 import javax.swing.ImageIcon;
+import javax.swing.JMenuItem;
+import java.awt.List;
 
 public class TelaPrincipal extends JFrame {
 
@@ -46,6 +48,12 @@ public class TelaPrincipal extends JFrame {
 		contentPane.setLayout(null);
 		
 		JButton btnCadastrarUsuario = new JButton("CADASTRAR USU\u00C1RIO");
+		btnCadastrarUsuario.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//A criar tela cadastro usuairo
+				
+			}
+		});
 		btnCadastrarUsuario.setBounds(74, 79, 167, 23);
 		contentPane.add(btnCadastrarUsuario);
 		
@@ -58,10 +66,20 @@ public class TelaPrincipal extends JFrame {
 		contentPane.add(btnlistarusuarios);
 		
 		JButton btnfinancas = new JButton("FINAN\u00C7AS");
+		btnfinancas.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new TelaFinancas().setVisible(true);
+			}
+		});
 		btnfinancas.setBounds(74, 242, 167, 23);
 		contentPane.add(btnfinancas);
 		
 		JButton btnfuncionario = new JButton("FUNCION\u00C1RIO");
+		btnfuncionario.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new TelaCadastroFuncionario().setVisible(true);
+			}
+		});
 		btnfuncionario.setBounds(74, 327, 167, 23);
 		contentPane.add(btnfuncionario);
 		
@@ -70,7 +88,7 @@ public class TelaPrincipal extends JFrame {
 		contentPane.add(btnfidelidade);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Paulo\\Pictures\\Nova pasta\\Barber\\Imagens\\Imagemtelaprincipal.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Barber\\Imagens\\Imagemtelaprincipal.jpg"));
 		lblNewLabel.setBounds(328, 0, 555, 527);
 		contentPane.add(lblNewLabel);
 	}
