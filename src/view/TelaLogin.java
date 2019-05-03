@@ -64,6 +64,10 @@ public class TelaLogin extends JFrame {
 		JButton btnEntrar = new JButton("ENTRAR");
 		btnEntrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				//passando uma senha qualquer so para testar a funcionalidade
+				if(loginUsuario.getText().equals("henrique") && senhaUsuario.getText().equals("salao") ) {
+					new TelaPrincipal().setVisible(true);
+				}
 			}
 		});
 		
@@ -74,6 +78,11 @@ public class TelaLogin extends JFrame {
 		contentPane.add(btnEntrar);
 		
 		JButton btnEsqueciASenha = new JButton("ESQUECI A SENHA");
+		btnEsqueciASenha.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new RecupSenha().setVisible(true);
+			}
+		});
 		btnEsqueciASenha.setBounds(173, 112, 155, 23);
 		contentPane.add(btnEsqueciASenha);
 	
